@@ -1,9 +1,9 @@
-from src.core.data_processing import DataProcessor
-from src.core.calculation import TemperatureCalculator
-from src.ui.gui import GraphController
+from core.data_processing import DataProcessor
+from core.calculation import TemperatureCalculator
+from ui.gui import GraphController
 
 def main():
-    file_path = 'data/its90trp+2.txt'
+    file_path = '../data/its90trp+2.txt'
 
     data_processor = DataProcessor(file_path)
     temperature_calculator = TemperatureCalculator({}, [])

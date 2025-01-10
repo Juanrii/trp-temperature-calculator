@@ -36,7 +36,7 @@ class TemperatureCalculator:
     def registrar_promedio_rmedida(self, promedio):
         self.promedio_rmedida = promedio
 
-    def guardar_temperatura(self, filepath='data/valores_medidos.txt'):
+    def guardar_temperatura(self, filepath='../data/valores_medidos.txt'):
         temperatura = self.temperatura_data[-1] if self.temperatura_data else None
         if temperatura is not None:
             with open(filepath, 'a') as f:
